@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(#7fd3ff, #d9f5ff);
+    font-family: 'Lilita One', 'Arial Black', sans-serif;
+    text-align: center;
+    cursor: none;
+    user-select: none;
+  }
+  
+  h1 {
+    margin: 30px 0 16px;
+    font-size: 64px;
+    color: #ffd23f;
+    text-shadow: 0 6px 0 #e07a00;
+  }
+  
+  .placar {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .caixa {
+    width: 120px;
+    padding: 8px;
+    font-size: 32px;
+    color: #3a3a3a;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 0 #9cc9dd;
+  }
+  
+  .tabuleiro {
+    display: inline-grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 20px;
+    padding: 10px 24px 30px;
+    background: #6cc24a;
+    border-radius: 40px;
+    box-shadow: 0 14px 0 #4a9a2e;
+  }
+  
+  .buraco {
+    height: 56px;
+    margin-top: 30px;
+    border-radius: 50%;
+    background: #3b2412;
+    border: 6px solid #8a5a2b;
+    font-size: 56px;
+    line-height: 20px;
+  }
+  
+  button {
+    display: block;
+    margin: 40px auto 0;
+    padding: 12px 50px;
+    font-family: inherit;
+    font-size: 30px;
+    color: white;
+    background: #ff7a00;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 0 #b85400;
+    cursor: none;
+  }
+  
+  button:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 0 #b85400;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+  }
+  
+  #mensagem {
+    font-size: 28px;
+    color: #2d6a1b;
+  }
+  
+  #martelo {
+    position: fixed;
+    left: -100px;
+    top: -100px;
+    margin: -54px 0 0 -14px;
+    font-size: 64px;
+    pointer-events: none;
+    transform-origin: bottom right;
+    transform: rotate(15deg);
+    transition: transform 0.06s;
+  }
+  
+  #martelo.batendo {
+    transform: rotate(-15deg);
+  }
+  
